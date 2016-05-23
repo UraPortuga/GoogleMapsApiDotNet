@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FAA569C-AFB7-4735-919D-DAD39EBD11A1}</ProjectGuid>
+    <ProjectGuid>{D9DBEF65-2AB7-447F-82D5-8D523FEA9DB5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoogleMapsApiDotNet</RootNamespace>
-    <AssemblyName>GoogleMapsApiDotNet</AssemblyName>
+    <RootNamespace>GoogleMapsApiDotNet.DirectionsApi</RootNamespace>
+    <AssemblyName>GoogleMapsApiDotNet.DirectionsApi</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,7 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Bounds.cs" />
+    <Compile Include="Domain\Response\DirectionsResponse.cs" />
+    <Compile Include="Domain\Distance.cs" />
+    <Compile Include="Domain\Duration.cs" />
+    <Compile Include="Domain\GeocodedWaypoint.cs" />
+    <Compile Include="Domain\Leg.cs" />
+    <Compile Include="Domain\Polyline.cs" />
+    <Compile Include="Domain\Step.cs" />
+    <Compile Include="Domain\Route.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Resquest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
+      <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>
+      <Name>GoogleMapsApiDotNet.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FAA569C-AFB7-4735-919D-DAD39EBD11A1}</ProjectGuid>
+    <ProjectGuid>{9B067292-68CE-44CB-813B-7B144D9C397A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoogleMapsApiDotNet</RootNamespace>
-    <AssemblyName>GoogleMapsApiDotNet</AssemblyName>
+    <RootNamespace>GoogleMapsApiDotNet.ElevationApi</RootNamespace>
+    <AssemblyName>GoogleMapsApiDotNet.ElevationApi</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,7 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Response\ElevationResponse.cs" />
+    <Compile Include="Domain\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Request\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
+      <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>
+      <Name>GoogleMapsApiDotNet.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

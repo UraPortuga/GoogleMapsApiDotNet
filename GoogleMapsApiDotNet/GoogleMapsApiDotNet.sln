@@ -5,6 +5,24 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet", "GoogleMapsApiDotNet\GoogleMapsApiDotNet.csproj", "{8FAA569C-AFB7-4735-919D-DAD39EBD11A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.Domain", "GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj", "{6E3DFC33-11AE-4302-BE7D-676F7F17ACF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.DirectionsApi", "GoogleMapsApiDotNet.DirectionsApi\GoogleMapsApiDotNet.DirectionsApi.csproj", "{D9DBEF65-2AB7-447F-82D5-8D523FEA9DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.DistanceMatrixApi", "GoogleMapsApiDotNet.DistanceMatrixApi\GoogleMapsApiDotNet.DistanceMatrixApi.csproj", "{E606DF36-8766-4269-9F03-A6FF9099519C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.ElevationApi", "GoogleMapsApiDotNet.ElevationApi\GoogleMapsApiDotNet.ElevationApi.csproj", "{9B067292-68CE-44CB-813B-7B144D9C397A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.GeocodingApi", "GoogleMapsApiDotNet.GeocodingApi\GoogleMapsApiDotNet.GeocodingApi.csproj", "{DF98B56A-5508-4FFE-835F-096890E815BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.GeolocationApi", "GoogleMapsApiDotNet.GeolocationApi\GoogleMapsApiDotNet.GeolocationApi.csproj", "{209B1020-3826-4451-97A8-9AE9193BC6ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.PlacesApi", "GoogleMapsApiDotNet.PlacesApi\GoogleMapsApiDotNet.PlacesApi.csproj", "{28C27444-65F3-4D41-AE95-6B0A388FD33E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.RoadsApi", "GoogleMapsApiDotNet.RoadsApi\GoogleMapsApiDotNet.RoadsApi.csproj", "{FCE1E71A-2297-4F79-A4FF-E5A798DEEC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.TimeZoneApi", "GoogleMapsApiDotNet.TimeZoneApi\GoogleMapsApiDotNet.TimeZoneApi.csproj", "{DEDBF089-C1FE-488C-AE9E-12837C7125EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +33,42 @@ Global
 		{8FAA569C-AFB7-4735-919D-DAD39EBD11A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FAA569C-AFB7-4735-919D-DAD39EBD11A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FAA569C-AFB7-4735-919D-DAD39EBD11A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3DFC33-11AE-4302-BE7D-676F7F17ACF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3DFC33-11AE-4302-BE7D-676F7F17ACF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3DFC33-11AE-4302-BE7D-676F7F17ACF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3DFC33-11AE-4302-BE7D-676F7F17ACF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DBEF65-2AB7-447F-82D5-8D523FEA9DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DBEF65-2AB7-447F-82D5-8D523FEA9DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DBEF65-2AB7-447F-82D5-8D523FEA9DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DBEF65-2AB7-447F-82D5-8D523FEA9DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E606DF36-8766-4269-9F03-A6FF9099519C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E606DF36-8766-4269-9F03-A6FF9099519C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E606DF36-8766-4269-9F03-A6FF9099519C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E606DF36-8766-4269-9F03-A6FF9099519C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B067292-68CE-44CB-813B-7B144D9C397A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B067292-68CE-44CB-813B-7B144D9C397A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B067292-68CE-44CB-813B-7B144D9C397A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B067292-68CE-44CB-813B-7B144D9C397A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF98B56A-5508-4FFE-835F-096890E815BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF98B56A-5508-4FFE-835F-096890E815BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF98B56A-5508-4FFE-835F-096890E815BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF98B56A-5508-4FFE-835F-096890E815BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{209B1020-3826-4451-97A8-9AE9193BC6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209B1020-3826-4451-97A8-9AE9193BC6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209B1020-3826-4451-97A8-9AE9193BC6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209B1020-3826-4451-97A8-9AE9193BC6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C27444-65F3-4D41-AE95-6B0A388FD33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C27444-65F3-4D41-AE95-6B0A388FD33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C27444-65F3-4D41-AE95-6B0A388FD33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C27444-65F3-4D41-AE95-6B0A388FD33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE1E71A-2297-4F79-A4FF-E5A798DEEC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE1E71A-2297-4F79-A4FF-E5A798DEEC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE1E71A-2297-4F79-A4FF-E5A798DEEC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE1E71A-2297-4F79-A4FF-E5A798DEEC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
