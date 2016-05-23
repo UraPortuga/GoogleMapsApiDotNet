@@ -55,13 +55,22 @@
     <Compile Include="Domain\Photo.cs" />
     <Compile Include="Domain\Prediction.cs" />
     <Compile Include="Domain\PredictionQuery.cs" />
+    <Compile Include="Domain\Request\PlaceAddRequest.cs" />
+    <Compile Include="Domain\Request\PlaceAutocompleteRequest.cs" />
+    <Compile Include="Domain\Request\PlaceDeleteRequest.cs" />
+    <Compile Include="Domain\Request\PlaceDetailsRequest.cs" />
+    <Compile Include="Domain\Request\PlaceNearbySearchRequest.cs" />
+    <Compile Include="Domain\Request\PlacePhotoRequest.cs" />
+    <Compile Include="Domain\Request\PlaceQueryAutocompleteRequest.cs" />
+    <Compile Include="Domain\Request\PlaceRadarSearchRequest.cs" />
+    <Compile Include="Domain\Request\PlaceTextSearchRequest.cs" />
     <Compile Include="Domain\Response\PlaceAddResponse.cs" />
     <Compile Include="Domain\Response\PlaceAutocompleteResponse.cs" />
     <Compile Include="Domain\Response\PlaceDeleteResponse.cs" />
     <Compile Include="Domain\Response\PlaceDetailsResponse.cs" />
     <Compile Include="Domain\Response\PlaceNearbySearchResponse.cs" />
     <Compile Include="Domain\Response\PlacePhotoResponse.cs" />
-    <Compile Include="Domain\Response\PlaceQueryAutocomplete.cs" />
+    <Compile Include="Domain\Response\PlaceQueryAutocompleteResponse.cs" />
     <Compile Include="Domain\Response\PlaceRadarSearchResponse.cs" />
     <Compile Include="Domain\Response\PlaceTextSearchResponse.cs" />
     <Compile Include="Domain\Result.cs" />
@@ -73,9 +82,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\Request\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
       <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>

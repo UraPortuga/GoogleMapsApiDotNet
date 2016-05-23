@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\BaseRequest.cs" />
     <Compile Include="Domain\Distance.cs" />
     <Compile Include="Domain\Duration.cs" />
     <Compile Include="Domain\Location.cs" />
