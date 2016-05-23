@@ -44,10 +44,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\AddressComponent.cs" />
+    <Compile Include="Domain\Aspect.cs" />
+    <Compile Include="Domain\Geometry.cs" />
+    <Compile Include="Domain\MatchedSubstring.cs" />
+    <Compile Include="Domain\OpeningHours.cs" />
+    <Compile Include="Domain\OpeningHoursDetail.cs" />
+    <Compile Include="Domain\Period.cs" />
+    <Compile Include="Domain\PeriodDate.cs" />
+    <Compile Include="Domain\Photo.cs" />
+    <Compile Include="Domain\Prediction.cs" />
+    <Compile Include="Domain\PredictionQuery.cs" />
+    <Compile Include="Domain\Response\PlaceAddResponse.cs" />
+    <Compile Include="Domain\Response\PlaceAutocompleteResponse.cs" />
+    <Compile Include="Domain\Response\PlaceDeleteResponse.cs" />
+    <Compile Include="Domain\Response\PlaceDetailsResponse.cs" />
+    <Compile Include="Domain\Response\PlaceNearbySearchResponse.cs" />
+    <Compile Include="Domain\Response\PlacePhotoResponse.cs" />
+    <Compile Include="Domain\Response\PlaceQueryAutocomplete.cs" />
+    <Compile Include="Domain\Response\PlaceRadarSearchResponse.cs" />
+    <Compile Include="Domain\Response\PlaceTextSearchResponse.cs" />
+    <Compile Include="Domain\Result.cs" />
+    <Compile Include="Domain\ResultDetail.cs" />
+    <Compile Include="Domain\Review.cs" />
+    <Compile Include="Domain\Term.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Request\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
+      <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>
+      <Name>GoogleMapsApiDotNet.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
