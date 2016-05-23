@@ -44,10 +44,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\GoogleMapsApiDotNetFluent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.DirectionsApi\GoogleMapsApiDotNet.DirectionsApi.csproj">
+      <Project>{d9dbef65-2ab7-447f-82d5-8d523fea9db5}</Project>
+      <Name>GoogleMapsApiDotNet.DirectionsApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.DistanceMatrixApi\GoogleMapsApiDotNet.DistanceMatrixApi.csproj">
+      <Project>{e606df36-8766-4269-9f03-a6ff9099519c}</Project>
+      <Name>GoogleMapsApiDotNet.DistanceMatrixApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
+      <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>
+      <Name>GoogleMapsApiDotNet.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.ElevationApi\GoogleMapsApiDotNet.ElevationApi.csproj">
+      <Project>{9b067292-68ce-44cb-813b-7b144d9c397a}</Project>
+      <Name>GoogleMapsApiDotNet.ElevationApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.GeocodingApi\GoogleMapsApiDotNet.GeocodingApi.csproj">
+      <Project>{df98b56a-5508-4ffe-835f-096890e815be}</Project>
+      <Name>GoogleMapsApiDotNet.GeocodingApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.GeolocationApi\GoogleMapsApiDotNet.GeolocationApi.csproj">
+      <Project>{209b1020-3826-4451-97a8-9ae9193bc6ed}</Project>
+      <Name>GoogleMapsApiDotNet.GeolocationApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.PlacesApi\GoogleMapsApiDotNet.PlacesApi.csproj">
+      <Project>{28c27444-65f3-4d41-ae95-6b0a388fd33e}</Project>
+      <Name>GoogleMapsApiDotNet.PlacesApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.RoadsApi\GoogleMapsApiDotNet.RoadsApi.csproj">
+      <Project>{fce1e71a-2297-4f79-a4ff-e5a798deec27}</Project>
+      <Name>GoogleMapsApiDotNet.RoadsApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleMapsApiDotNet.TimeZoneApi\GoogleMapsApiDotNet.TimeZoneApi.csproj">
+      <Project>{dedbf089-c1fe-488c-ae9e-12837c7125ec}</Project>
+      <Name>GoogleMapsApiDotNet.TimeZoneApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
