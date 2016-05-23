@@ -51,13 +51,12 @@
     <Compile Include="Domain\GeocodedWaypoint.cs" />
     <Compile Include="Domain\Leg.cs" />
     <Compile Include="Domain\Polyline.cs" />
+    <Compile Include="Domain\Resquest\DirectionsRequest.cs" />
     <Compile Include="Domain\Step.cs" />
     <Compile Include="Domain\Route.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\Resquest\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
       <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>

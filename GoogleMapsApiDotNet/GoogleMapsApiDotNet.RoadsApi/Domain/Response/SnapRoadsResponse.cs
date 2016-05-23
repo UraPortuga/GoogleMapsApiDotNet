@@ -2,7 +2,7 @@
 
 namespace GoogleMapsApiDotNet.RoadsApi.Domain.Response
 {
-	public class RoadsResponse
+	public class SnapRoadsResponse
 	{
 		public List<SnappedPoint> SnappedPoints { get; set; }
 	}

@@ -45,13 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\Element.cs" />
+    <Compile Include="Domain\Request\DistanceMatrixRequest.cs" />
     <Compile Include="Domain\Response\DistanceMatrixResponse.cs" />
     <Compile Include="Domain\Row.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\Request\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
       <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>

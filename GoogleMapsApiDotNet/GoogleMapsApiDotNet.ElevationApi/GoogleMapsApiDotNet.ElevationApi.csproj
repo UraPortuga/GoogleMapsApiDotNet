@@ -44,13 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Request\ElevationRequest.cs" />
     <Compile Include="Domain\Response\ElevationResponse.cs" />
     <Compile Include="Domain\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\Request\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GoogleMapsApiDotNet.Domain\GoogleMapsApiDotNet.Domain.csproj">
       <Project>{6e3dfc33-11ae-4302-be7d-676f7f17acf9}</Project>

@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\CellTower.cs" />
+    <Compile Include="Domain\Request\GeolocationRequest.cs" />
     <Compile Include="Domain\Response\GeolocationResponse.cs" />
+    <Compile Include="Domain\WifiAccessPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,9 +56,7 @@
       <Name>GoogleMapsApiDotNet.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\Request\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
