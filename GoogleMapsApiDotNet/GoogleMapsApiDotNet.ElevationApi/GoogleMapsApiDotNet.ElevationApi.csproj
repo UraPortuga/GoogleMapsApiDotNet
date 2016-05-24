@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Request\ElevationRequest.cs" />
+    <Compile Include="Domain\Request\Elevation.cs" />
     <Compile Include="Domain\Response\ElevationResponse.cs" />
     <Compile Include="Domain\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

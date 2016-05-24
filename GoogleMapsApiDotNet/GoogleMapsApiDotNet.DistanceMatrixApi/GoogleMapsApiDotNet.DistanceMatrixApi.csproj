@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\Element.cs" />
-    <Compile Include="Domain\Request\DistanceMatrixRequest.cs" />
+    <Compile Include="Domain\Request\DistanceMatrix.cs" />
     <Compile Include="Domain\Response\DistanceMatrixResponse.cs" />
     <Compile Include="Domain\Row.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

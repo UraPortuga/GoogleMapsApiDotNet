@@ -44,8 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Request\SnapRoadsRequest.cs" />
-    <Compile Include="Domain\Request\SpeedLimitRequest.cs" />
+    <Compile Include="Domain\Request\SnapRoads.cs" />
+    <Compile Include="Domain\Request\SpeedLimit.cs" />
     <Compile Include="Domain\Response\SnapRoadsResponse.cs" />
     <Compile Include="Domain\Response\SpeedLimitResponse.cs" />
     <Compile Include="Domain\SnappedPoint.cs" />

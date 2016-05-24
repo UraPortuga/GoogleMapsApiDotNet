@@ -18,21 +18,21 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Elevation Request
 
-		public static ElevationRequest GetElevation() => new ElevationRequest { Key = Key };
+		public static Elevation GetElevation() => new Elevation { Key = Key };
 
-		public static ElevationRequest WithPath(this ElevationRequest request, string path)
+		public static Elevation WithPath(this Elevation request, string path)
 		{
 			request.Path = path;
 			return request;
 		}
 
-		public static ElevationRequest WithSamples(this ElevationRequest request, string samples)
+		public static Elevation WithSamples(this Elevation request, string samples)
 		{
 			request.Samples = samples;
 			return request;
 		}
 
-		public static ElevationRequest WithLocations(this ElevationRequest request, List<string> locations)
+		public static Elevation WithLocations(this Elevation request, List<string> locations)
 		{
 			request.Locations = locations;
 			return request;
@@ -42,21 +42,21 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region TimeZone Request
 
-		public static TimeZoneRequest GetTimeZone() => new TimeZoneRequest { Key = Key };
+		public static TimeZone GetTimeZone() => new TimeZone { Key = Key };
 
-		public static TimeZoneRequest WithLanguage(this TimeZoneRequest request, string language)
+		public static TimeZone WithLanguage(this TimeZone request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static TimeZoneRequest WithLocation(this TimeZoneRequest request, string location)
+		public static TimeZone WithLocation(this TimeZone request, string location)
 		{
 			request.Location = location;
 			return request;
 		}
 
-		public static TimeZoneRequest WithTimestamp(this TimeZoneRequest request, string timestamp)
+		public static TimeZone WithTimestamp(this TimeZone request, string timestamp)
 		{
 			request.Timestamp = timestamp;
 			return request;
@@ -68,15 +68,15 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Snap To Roads Request
 
-		public static SnapRoadsRequest GetSnapRoads() => new SnapRoadsRequest { Key = Key };
+		public static SnapRoads GetSnapRoads() => new SnapRoads { Key = Key };
 
-		public static SnapRoadsRequest WithInterpolate(this SnapRoadsRequest request, string interpolate)
+		public static SnapRoads WithInterpolate(this SnapRoads request, string interpolate)
 		{
 			request.Interpolate = interpolate;
 			return request;
 		}
 
-		public static SnapRoadsRequest WithPath(this SnapRoadsRequest request, List<string> path)
+		public static SnapRoads WithPath(this SnapRoads request, List<string> path)
 		{
 			request.Path = path;
 			return request;
@@ -86,21 +86,21 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Speed Limit Request 
 
-		public static SpeedLimitRequest GetSpeedLimit() => new SpeedLimitRequest { Key = Key };
+		public static SpeedLimit GetSpeedLimit() => new SpeedLimit { Key = Key };
 
-		public static SpeedLimitRequest WithPath(this SpeedLimitRequest request, List<string> path)
+		public static SpeedLimit WithPath(this SpeedLimit request, List<string> path)
 		{
 			request.Path = path;
 			return request;
 		}
 
-		public static SpeedLimitRequest WithPlaceId(this SpeedLimitRequest request, List<string> placeId)
+		public static SpeedLimit WithPlaceId(this SpeedLimit request, List<string> placeId)
 		{
 			request.PlaceId = placeId.ToArray();
 			return request;
 		}
 
-		public static SpeedLimitRequest WithUnits(this SpeedLimitRequest request, string units)
+		public static SpeedLimit WithUnits(this SpeedLimit request, string units)
 		{
 			request.Units = units;
 			return request;
@@ -112,88 +112,88 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Directions Request
 
-		public static DirectionsRequest GetDirections() => new DirectionsRequest { Key = Key };
+		public static Directions GetDirections() => new Directions { Key = Key };
 
-		public static DirectionsRequest WithAlternatives(this DirectionsRequest request, string alternatives)
+		public static Directions WithAlternatives(this Directions request, string alternatives)
 		{
 			request.Alternatives = alternatives;
 			return request;
 		}
 
-		public static DirectionsRequest WithArrivalTime(this DirectionsRequest request, string arrivalTime)
+		public static Directions WithArrivalTime(this Directions request, string arrivalTime)
 		{
 			request.ArrivalTime = arrivalTime;
 			return request;
 		}
 
-		public static DirectionsRequest WithUnits(this DirectionsRequest request, string units)
+		public static Directions WithUnits(this Directions request, string units)
 		{
 			request.Units = units;
 			return request;
 		}
 
-		public static DirectionsRequest WithAvoid(this DirectionsRequest request, string avoid)
+		public static Directions WithAvoid(this Directions request, string avoid)
 		{
 			request.Avoid = avoid;
 			return request;
 		}
 
-		public static DirectionsRequest WithDepartureTime(this DirectionsRequest request, string departureTime)
+		public static Directions WithDepartureTime(this Directions request, string departureTime)
 		{
 			request.DepartureTime = departureTime;
 			return request;
 		}
 
-		public static DirectionsRequest WithDestination(this DirectionsRequest request, List<string> destinations)
+		public static Directions WithDestination(this Directions request, List<string> destinations)
 		{
 			request.Destination = destinations;
 			return request;
 		}
 
-		public static DirectionsRequest WithLanguage(this DirectionsRequest request, string language)
+		public static Directions WithLanguage(this Directions request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static DirectionsRequest WithMode(this DirectionsRequest request, string mode)
+		public static Directions WithMode(this Directions request, string mode)
 		{
 			request.Mode = mode;
 			return request;
 		}
 
-		public static DirectionsRequest WithOrigin(this DirectionsRequest request, string origin)
+		public static Directions WithOrigin(this Directions request, string origin)
 		{
 			request.Origin = origin;
 			return request;
 		}
 
-		public static DirectionsRequest WithRegion(this DirectionsRequest request, string region)
+		public static Directions WithRegion(this Directions request, string region)
 		{
 			request.Region = region;
 			return request;
 		}
 
-		public static DirectionsRequest WithTrafficModel(this DirectionsRequest request, string trafficModel)
+		public static Directions WithTrafficModel(this Directions request, string trafficModel)
 		{
 			request.TrafficModel = trafficModel;
 			return request;
 		}
 
-		public static DirectionsRequest WithTransitMode(this DirectionsRequest request, string transitMode)
+		public static Directions WithTransitMode(this Directions request, string transitMode)
 		{
 			request.TransitMode = transitMode;
 			return request;
 		}
 
-		public static DirectionsRequest WithTransitRoutingPreference(this DirectionsRequest request,
+		public static Directions WithTransitRoutingPreference(this Directions request,
 			string transitRoutingPreference)
 		{
 			request.TransitRoutingPreference = transitRoutingPreference;
 			return request;
 		}
 
-		public static DirectionsRequest WithWaypoints(this DirectionsRequest request, List<string> waypoints)
+		public static Directions WithWaypoints(this Directions request, List<string> waypoints)
 		{
 			request.Waypoints = waypoints;
 			return request;
@@ -203,75 +203,75 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Distance Matrix Request
 
-		public static DistanceMatrixRequest GetDistanceMatrix() => new DistanceMatrixRequest { Key = Key };
+		public static DistanceMatrix GetDistanceMatrix() => new DistanceMatrix { Key = Key };
 
-		public static DistanceMatrixRequest WithArrivalTime(this DistanceMatrixRequest request, string arrivalTime)
+		public static DistanceMatrix WithArrivalTime(this DistanceMatrix request, string arrivalTime)
 		{
 			request.ArrivalTime = arrivalTime;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithUnits(this DistanceMatrixRequest request, string units)
+		public static DistanceMatrix WithUnits(this DistanceMatrix request, string units)
 		{
 			request.Units = units;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithAvoid(this DistanceMatrixRequest request, string avoid)
+		public static DistanceMatrix WithAvoid(this DistanceMatrix request, string avoid)
 		{
 			request.Avoid = avoid;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithDepartureTime(this DistanceMatrixRequest request, string departureTime)
+		public static DistanceMatrix WithDepartureTime(this DistanceMatrix request, string departureTime)
 		{
 			request.DepartureTime = departureTime;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithDestination(this DistanceMatrixRequest request, List<string> destinations)
+		public static DistanceMatrix WithDestination(this DistanceMatrix request, List<string> destinations)
 		{
 			request.Destination = destinations;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithLanguage(this DistanceMatrixRequest request, string language)
+		public static DistanceMatrix WithLanguage(this DistanceMatrix request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithMode(this DistanceMatrixRequest request, string mode)
+		public static DistanceMatrix WithMode(this DistanceMatrix request, string mode)
 		{
 			request.Mode = mode;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithOrigin(this DistanceMatrixRequest request, List<string> origin)
+		public static DistanceMatrix WithOrigin(this DistanceMatrix request, List<string> origin)
 		{
-			request.Origin = origin;
+			request.Origins = origin;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithRegion(this DistanceMatrixRequest request, string region)
+		public static DistanceMatrix WithRegion(this DistanceMatrix request, string region)
 		{
 			request.Region = region;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithTrafficModel(this DistanceMatrixRequest request, string trafficModel)
+		public static DistanceMatrix WithTrafficModel(this DistanceMatrix request, string trafficModel)
 		{
 			request.TrafficModel = trafficModel;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithTransitMode(this DistanceMatrixRequest request, string transitMode)
+		public static DistanceMatrix WithTransitMode(this DistanceMatrix request, string transitMode)
 		{
 			request.TransitMode = transitMode;
 			return request;
 		}
 
-		public static DistanceMatrixRequest WithTransitRoutingPreference(this DistanceMatrixRequest request,
+		public static DistanceMatrix WithTransitRoutingPreference(this DistanceMatrix request,
 			string transitRoutingPreference)
 		{
 			request.TransitRoutingPreference = transitRoutingPreference;
@@ -282,57 +282,57 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Geocoding Request
 
-		public static GeocodingRequest GetGeocoding() => new GeocodingRequest { Key = Key };
+		public static Geocoding GetGeocoding() => new Geocoding { Key = Key };
 
-		public static GeocodingRequest WithAddress(this GeocodingRequest request, string address)
+		public static Geocoding WithAddress(this Geocoding request, string address)
 		{
 			request.Address = address;
 			return request;
 		}
 
-		public static GeocodingRequest WithComponents(this GeocodingRequest request, string components)
+		public static Geocoding WithComponents(this Geocoding request, string components)
 		{
 			request.Components = components;
 			return request;
 		}
 
-		public static GeocodingRequest WithLatLng(this GeocodingRequest request, string latLng)
+		public static Geocoding WithLatLng(this Geocoding request, string latLng)
 		{
 			request.LatLng = latLng;
 			return request;
 		}
 
-		public static GeocodingRequest WithPlaceId(this GeocodingRequest request, string placeId)
+		public static Geocoding WithPlaceId(this Geocoding request, string placeId)
 		{
 			request.PlaceId = placeId;
 			return request;
 		}
 
-		public static GeocodingRequest WithLanguage(this GeocodingRequest request, string language)
+		public static Geocoding WithLanguage(this Geocoding request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static GeocodingRequest WithResultType(this GeocodingRequest request, string resultType)
+		public static Geocoding WithResultType(this Geocoding request, string resultType)
 		{
 			request.ResultType = resultType;
 			return request;
 		}
 
-		public static GeocodingRequest WithBounds(this GeocodingRequest request, List<string> bounds)
+		public static Geocoding WithBounds(this Geocoding request, List<string> bounds)
 		{
 			request.Bounds = bounds;
 			return request;
 		}
 
-		public static GeocodingRequest WithRegion(this GeocodingRequest request, string region)
+		public static Geocoding WithRegion(this Geocoding request, string region)
 		{
 			request.Region = region;
 			return request;
 		}
 
-		public static GeocodingRequest WithLocationType(this GeocodingRequest request, string locationType)
+		public static Geocoding WithLocationType(this Geocoding request, string locationType)
 		{
 			request.LocationType = locationType;
 			return request;
@@ -342,45 +342,45 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Geolocation Request
 
-		public static GeolocationRequest GetGeolocation() => new GeolocationRequest { Key = Key };
+		public static Geolocation GetGeolocation() => new Geolocation { Key = Key };
 
-		public static GeolocationRequest WithCarrier(this GeolocationRequest request, string carrier)
+		public static Geolocation WithCarrier(this Geolocation request, string carrier)
 		{
 			request.Carrier = carrier;
 			return request;
 		}
 
-		public static GeolocationRequest WithConsiderIp(this GeolocationRequest request, string considerIp)
+		public static Geolocation WithConsiderIp(this Geolocation request, string considerIp)
 		{
 			request.ConsiderIp = considerIp;
 			return request;
 		}
 
-		public static GeolocationRequest WithHomeMobileCountryCode(this GeolocationRequest request, int homeMobileCountryCode)
+		public static Geolocation WithHomeMobileCountryCode(this Geolocation request, int homeMobileCountryCode)
 		{
 			request.HomeMobileCountryCode = homeMobileCountryCode;
 			return request;
 		}
 
-		public static GeolocationRequest WithHomeMobileNetworkCode(this GeolocationRequest request, int homeMobileNetworkCode)
+		public static Geolocation WithHomeMobileNetworkCode(this Geolocation request, int homeMobileNetworkCode)
 		{
 			request.HomeMobileNetworkCode = homeMobileNetworkCode;
 			return request;
 		}
 
-		public static GeolocationRequest WithRadioType(this GeolocationRequest request, string radioType)
+		public static Geolocation WithRadioType(this Geolocation request, string radioType)
 		{
 			request.RadioType = radioType;
 			return request;
 		}
 
-		public static GeolocationRequest WithCellTowers(this GeolocationRequest request, List<CellTower> cellTowers)
+		public static Geolocation WithCellTowers(this Geolocation request, List<CellTower> cellTowers)
 		{
 			request.CellTowers = cellTowers;
 			return request;
 		}
 
-		public static GeolocationRequest WithWifiAccessPoints(this GeolocationRequest request,
+		public static Geolocation WithWifiAccessPoints(this Geolocation request,
 			List<WifiAccessPoint> wifiAccessPoints)
 		{
 			request.WifiAccessPoints = wifiAccessPoints;
@@ -393,75 +393,75 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Nearby Search
 
-		public static PlaceNearbySearchRequest GetPlaceNearbySearch() => new PlaceNearbySearchRequest { Key = Key };
+		public static PlaceNearbySearch GetPlaceNearbySearch() => new PlaceNearbySearch { Key = Key };
 
-		public static PlaceNearbySearchRequest WithKeyword(this PlaceNearbySearchRequest request, string keyword)
+		public static PlaceNearbySearch WithKeyword(this PlaceNearbySearch request, string keyword)
 		{
 			request.Keyword = keyword;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithLanguage(this PlaceNearbySearchRequest request, string language)
+		public static PlaceNearbySearch WithLanguage(this PlaceNearbySearch request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithLocation(this PlaceNearbySearchRequest request, string location)
+		public static PlaceNearbySearch WithLocation(this PlaceNearbySearch request, string location)
 		{
 			request.Location = location;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithMaxPrice(this PlaceNearbySearchRequest request, string maxPrice)
+		public static PlaceNearbySearch WithMaxPrice(this PlaceNearbySearch request, string maxPrice)
 		{
 			request.MaxPrice = maxPrice;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithMinPrice(this PlaceNearbySearchRequest request, string minPrice)
+		public static PlaceNearbySearch WithMinPrice(this PlaceNearbySearch request, string minPrice)
 		{
 			request.MinPrice = minPrice;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithName(this PlaceNearbySearchRequest request, string name)
+		public static PlaceNearbySearch WithName(this PlaceNearbySearch request, string name)
 		{
 			request.Name = name;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithOpenNow(this PlaceNearbySearchRequest request, string openNow)
+		public static PlaceNearbySearch WithOpenNow(this PlaceNearbySearch request, string openNow)
 		{
 			request.OpenNow = openNow;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithPagetoken(this PlaceNearbySearchRequest request, string pagetoken)
+		public static PlaceNearbySearch WithPagetoken(this PlaceNearbySearch request, string pagetoken)
 		{
 			request.Pagetoken = pagetoken;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithRadius(this PlaceNearbySearchRequest request, string radius)
+		public static PlaceNearbySearch WithRadius(this PlaceNearbySearch request, string radius)
 		{
 			request.Radius = radius;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithRankby(this PlaceNearbySearchRequest request, string rankby)
+		public static PlaceNearbySearch WithRankby(this PlaceNearbySearch request, string rankby)
 		{
 			request.Rankby = rankby;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithTypes(this PlaceNearbySearchRequest request, string types)
+		public static PlaceNearbySearch WithTypes(this PlaceNearbySearch request, string types)
 		{
 			request.Types = types;
 			return request;
 		}
 
-		public static PlaceNearbySearchRequest WithZagatSelectedy(this PlaceNearbySearchRequest request, string zagatSelected)
+		public static PlaceNearbySearch WithZagatSelectedy(this PlaceNearbySearch request, string zagatSelected)
 		{
 			request.ZagatSelected = zagatSelected;
 			return request;
@@ -471,63 +471,63 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Text Search
 
-		public static PlaceTextSearchRequest GetPlaceTextSearch() => new PlaceTextSearchRequest { Key = Key };
+		public static PlaceTextSearch GetPlaceTextSearch() => new PlaceTextSearch { Key = Key };
 
-		public static PlaceTextSearchRequest WithKeyword(this PlaceTextSearchRequest request, string query)
+		public static PlaceTextSearch WithKeyword(this PlaceTextSearch request, string query)
 		{
 			request.Query = query;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithLanguage(this PlaceTextSearchRequest request, string language)
+		public static PlaceTextSearch WithLanguage(this PlaceTextSearch request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithLocation(this PlaceTextSearchRequest request, string location)
+		public static PlaceTextSearch WithLocation(this PlaceTextSearch request, string location)
 		{
 			request.Location = location;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithMaxPrice(this PlaceTextSearchRequest request, string maxPrice)
+		public static PlaceTextSearch WithMaxPrice(this PlaceTextSearch request, string maxPrice)
 		{
 			request.MaxPrice = maxPrice;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithMinPrice(this PlaceTextSearchRequest request, string minPrice)
+		public static PlaceTextSearch WithMinPrice(this PlaceTextSearch request, string minPrice)
 		{
 			request.MinPrice = minPrice;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithOpenNow(this PlaceTextSearchRequest request, string openNow)
+		public static PlaceTextSearch WithOpenNow(this PlaceTextSearch request, string openNow)
 		{
 			request.OpenNow = openNow;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithPagetoken(this PlaceTextSearchRequest request, string pagetoken)
+		public static PlaceTextSearch WithPagetoken(this PlaceTextSearch request, string pagetoken)
 		{
 			request.Pagetoken = pagetoken;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithRadius(this PlaceTextSearchRequest request, string radius)
+		public static PlaceTextSearch WithRadius(this PlaceTextSearch request, string radius)
 		{
 			request.Radius = radius;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithTypes(this PlaceTextSearchRequest request, string types)
+		public static PlaceTextSearch WithTypes(this PlaceTextSearch request, string types)
 		{
 			request.Types = types;
 			return request;
 		}
 
-		public static PlaceTextSearchRequest WithZagatSelectedy(this PlaceTextSearchRequest request, string zagatSelected)
+		public static PlaceTextSearch WithZagatSelectedy(this PlaceTextSearch request, string zagatSelected)
 		{
 			request.ZagatSelected = zagatSelected;
 			return request;
@@ -537,63 +537,63 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Radar Search
 
-		public static PlaceRadarSearchRequest GetPlaceRadarSearch() => new PlaceRadarSearchRequest { Key = Key };
+		public static PlaceRadarSearch GetPlaceRadarSearch() => new PlaceRadarSearch { Key = Key };
 
-		public static PlaceRadarSearchRequest WithKeyword(this PlaceRadarSearchRequest request, string keyword)
+		public static PlaceRadarSearch WithKeyword(this PlaceRadarSearch request, string keyword)
 		{
 			request.Keyword = keyword;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithLocation(this PlaceRadarSearchRequest request, string location)
+		public static PlaceRadarSearch WithLocation(this PlaceRadarSearch request, string location)
 		{
 			request.Location = location;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithMaxPrice(this PlaceRadarSearchRequest request, string maxPrice)
+		public static PlaceRadarSearch WithMaxPrice(this PlaceRadarSearch request, string maxPrice)
 		{
 			request.MaxPrice = maxPrice;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithMinPrice(this PlaceRadarSearchRequest request, string minPrice)
+		public static PlaceRadarSearch WithMinPrice(this PlaceRadarSearch request, string minPrice)
 		{
 			request.MinPrice = minPrice;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithName(this PlaceRadarSearchRequest request, string name)
+		public static PlaceRadarSearch WithName(this PlaceRadarSearch request, string name)
 		{
 			request.Name = name;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithOpenNow(this PlaceRadarSearchRequest request, string openNow)
+		public static PlaceRadarSearch WithOpenNow(this PlaceRadarSearch request, string openNow)
 		{
 			request.OpenNow = openNow;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithPagetoken(this PlaceRadarSearchRequest request, string pagetoken)
+		public static PlaceRadarSearch WithPagetoken(this PlaceRadarSearch request, string pagetoken)
 		{
 			request.Pagetoken = pagetoken;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithRadius(this PlaceRadarSearchRequest request, string radius)
+		public static PlaceRadarSearch WithRadius(this PlaceRadarSearch request, string radius)
 		{
 			request.Radius = radius;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithTypes(this PlaceRadarSearchRequest request, string types)
+		public static PlaceRadarSearch WithTypes(this PlaceRadarSearch request, string types)
 		{
 			request.Types = types;
 			return request;
 		}
 
-		public static PlaceRadarSearchRequest WithZagatSelectedy(this PlaceRadarSearchRequest request, string zagatSelected)
+		public static PlaceRadarSearch WithZagatSelectedy(this PlaceRadarSearch request, string zagatSelected)
 		{
 			request.ZagatSelected = zagatSelected;
 			return request;
@@ -603,45 +603,45 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Autocomplete 
 
-		public static PlaceAutocompleteRequest GetPlaceAutocomplete() => new PlaceAutocompleteRequest { Key = Key };
+		public static PlaceAutocomplete GetPlaceAutocomplete() => new PlaceAutocomplete { Key = Key };
 
-		public static PlaceAutocompleteRequest WithKeyword(this PlaceAutocompleteRequest request, string input)
+		public static PlaceAutocomplete WithKeyword(this PlaceAutocomplete request, string input)
 		{
 			request.Input = input;
 			return request;
 		}
 
-		public static PlaceAutocompleteRequest WithLanguage(this PlaceAutocompleteRequest request, string language)
+		public static PlaceAutocomplete WithLanguage(this PlaceAutocomplete request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static PlaceAutocompleteRequest WithLocation(this PlaceAutocompleteRequest request, string location)
+		public static PlaceAutocomplete WithLocation(this PlaceAutocomplete request, string location)
 		{
 			request.Location = location;
 			return request;
 		}
 
-		public static PlaceAutocompleteRequest WithRadius(this PlaceAutocompleteRequest request, string radius)
+		public static PlaceAutocomplete WithRadius(this PlaceAutocomplete request, string radius)
 		{
 			request.Radius = radius;
 			return request;
 		}
 
-		public static PlaceAutocompleteRequest WithTypes(this PlaceAutocompleteRequest request, string types)
+		public static PlaceAutocomplete WithTypes(this PlaceAutocomplete request, string types)
 		{
 			request.Types = types;
 			return request;
 		}
 
-		public static PlaceAutocompleteRequest WithComponents(this PlaceAutocompleteRequest request, string components)
+		public static PlaceAutocomplete WithComponents(this PlaceAutocomplete request, string components)
 		{
 			request.Components = components;
 			return request;
 		}
 
-		public static PlaceAutocompleteRequest WithOffset(this PlaceAutocompleteRequest request, string offset)
+		public static PlaceAutocomplete WithOffset(this PlaceAutocomplete request, string offset)
 		{
 			request.Offset = offset;
 			return request;
@@ -651,33 +651,33 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Query Autocomplete
 
-		public static PlaceQueryAutocompleteRequest GetPlaceQueryAutocomplete() => new PlaceQueryAutocompleteRequest { Key = Key };
+		public static PlaceQueryAutocomplete GetPlaceQueryAutocomplete() => new PlaceQueryAutocomplete { Key = Key };
 
-		public static PlaceQueryAutocompleteRequest WithKeyword(this PlaceQueryAutocompleteRequest request, string input)
+		public static PlaceQueryAutocomplete WithKeyword(this PlaceQueryAutocomplete request, string input)
 		{
 			request.Input = input;
 			return request;
 		}
 
-		public static PlaceQueryAutocompleteRequest WithLanguage(this PlaceQueryAutocompleteRequest request, string language)
+		public static PlaceQueryAutocomplete WithLanguage(this PlaceQueryAutocomplete request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static PlaceQueryAutocompleteRequest WithLocation(this PlaceQueryAutocompleteRequest request, string location)
+		public static PlaceQueryAutocomplete WithLocation(this PlaceQueryAutocomplete request, string location)
 		{
 			request.Location = location;
 			return request;
 		}
 
-		public static PlaceQueryAutocompleteRequest WithRadius(this PlaceQueryAutocompleteRequest request, string radius)
+		public static PlaceQueryAutocomplete WithRadius(this PlaceQueryAutocomplete request, string radius)
 		{
 			request.Radius = radius;
 			return request;
 		}
 
-		public static PlaceQueryAutocompleteRequest WithOffset(this PlaceQueryAutocompleteRequest request, string offset)
+		public static PlaceQueryAutocomplete WithOffset(this PlaceQueryAutocomplete request, string offset)
 		{
 			request.Offset = offset;
 			return request;
@@ -687,27 +687,27 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Details
 
-		public static PlaceDetailsRequest GetPlaceDetails() => new PlaceDetailsRequest { Key = Key };
+		public static PlaceDetails GetPlaceDetails() => new PlaceDetails { Key = Key };
 
-		public static PlaceDetailsRequest WithExtensions(this PlaceDetailsRequest request, string extensions)
+		public static PlaceDetails WithExtensions(this PlaceDetails request, string extensions)
 		{
 			request.Extensions = extensions;
 			return request;
 		}
 
-		public static PlaceDetailsRequest WithLanguage(this PlaceDetailsRequest request, string language)
+		public static PlaceDetails WithLanguage(this PlaceDetails request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static PlaceDetailsRequest WithPlaceId(this PlaceDetailsRequest request, string placeId)
+		public static PlaceDetails WithPlaceId(this PlaceDetails request, string placeId)
 		{
 			request.PlaceId = placeId;
 			return request;
 		}
 
-		public static PlaceDetailsRequest WithReference(this PlaceDetailsRequest request, string reference)
+		public static PlaceDetails WithReference(this PlaceDetails request, string reference)
 		{
 			request.Reference = reference;
 			return request;
@@ -717,45 +717,45 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Add
 
-		public static PlaceAddRequest GetPlaceAdd() => new PlaceAddRequest();
+		public static PlaceAdd GetPlaceAdd() => new PlaceAdd();
 
-		public static PlaceAddRequest WithAccuracy(this PlaceAddRequest request, int accuracy)
+		public static PlaceAdd WithAccuracy(this PlaceAdd request, int accuracy)
 		{
 			request.Accuracy = accuracy;
 			return request;
 		}
 
-		public static PlaceAddRequest WithLanguage(this PlaceAddRequest request, string language)
+		public static PlaceAdd WithLanguage(this PlaceAdd request, string language)
 		{
 			request.Language = language;
 			return request;
 		}
 
-		public static PlaceAddRequest WithAddress(this PlaceAddRequest request, string address)
+		public static PlaceAdd WithAddress(this PlaceAdd request, string address)
 		{
 			request.Address = address;
 			return request;
 		}
 
-		public static PlaceAddRequest WithName(this PlaceAddRequest request, string name)
+		public static PlaceAdd WithName(this PlaceAdd request, string name)
 		{
 			request.Name = name;
 			return request;
 		}
 
-		public static PlaceAddRequest WithWebsite(this PlaceAddRequest request, string website)
+		public static PlaceAdd WithWebsite(this PlaceAdd request, string website)
 		{
 			request.Website = website;
 			return request;
 		}
 
-		public static PlaceAddRequest WithPhoneNumber(this PlaceAddRequest request, string phone)
+		public static PlaceAdd WithPhoneNumber(this PlaceAdd request, string phone)
 		{
-			request.Phone_number = phone;
+			request.PhoneNumber = phone;
 			return request;
 		}
 
-		public static PlaceAddRequest WithTypes(this PlaceAddRequest request, List<string> types)
+		public static PlaceAdd WithTypes(this PlaceAdd request, List<string> types)
 		{
 			request.Types = types;
 			return request;
@@ -765,9 +765,9 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Delete
 
-		public static PlaceDeleteRequest GetPlaceDelete() => new PlaceDeleteRequest();
+		public static PlaceDelete GetPlaceDelete() => new PlaceDelete();
 
-		public static PlaceDeleteRequest WithPlaceId(this PlaceDeleteRequest request, string placeId)
+		public static PlaceDelete WithPlaceId(this PlaceDelete request, string placeId)
 		{
 			request.PlaceId = placeId;
 			return request;
@@ -777,21 +777,21 @@ namespace GoogleMapsApiDotNet.Domain
 
 		#region Place Photo
 
-		public static PlacePhotoRequest GetPlacePhoto() => new PlacePhotoRequest { Key = Key };
+		public static PlacePhoto GetPlacePhoto() => new PlacePhoto { Key = Key };
 
-		public static PlacePhotoRequest WithExtensions(this PlacePhotoRequest request, string photoReference)
+		public static PlacePhoto WithExtensions(this PlacePhoto request, string photoReference)
 		{
 			request.PhotoReference = photoReference;
 			return request;
 		}
 
-		public static PlacePhotoRequest WithMaxHeight(this PlacePhotoRequest request, string maxHeight)
+		public static PlacePhoto WithMaxHeight(this PlacePhoto request, string maxHeight)
 		{
 			request.MaxHeight = maxHeight;
 			return request;
 		}
 
-		public static PlacePhotoRequest WithMaxWidth(this PlacePhotoRequest request, string maxWidth)
+		public static PlacePhoto WithMaxWidth(this PlacePhoto request, string maxWidth)
 		{
 			request.MaxWidth = maxWidth;
 			return request;

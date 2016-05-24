@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\CellTower.cs" />
-    <Compile Include="Domain\Request\GeolocationRequest.cs" />
+    <Compile Include="Domain\Request\Geolocation.cs" />
     <Compile Include="Domain\Response\GeolocationResponse.cs" />
     <Compile Include="Domain\WifiAccessPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
