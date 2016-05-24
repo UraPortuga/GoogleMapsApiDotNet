@@ -2,7 +2,7 @@
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlaceDetailsRequest :BaseRequest
+	public class PlaceDetailsRequest : BaseRequest
 	{
 		public string PlaceId { get; set; }
 		public string Reference { get; set; }

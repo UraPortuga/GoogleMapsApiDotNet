@@ -1,5 +1,5 @@
-﻿using GoogleMapsApiDotNet.Domain.Domain;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using GoogleMapsApiDotNet.Domain.Domain;
 
 namespace GoogleMapsApiDotNet.DirectionsApi.Domain
 {
@@ -15,5 +15,4 @@ namespace GoogleMapsApiDotNet.DirectionsApi.Domain
 		public List<object> Traffic_speed_entry { get; set; }
 		public List<object> Via_waypoint { get; set; }
 	}
-
 }

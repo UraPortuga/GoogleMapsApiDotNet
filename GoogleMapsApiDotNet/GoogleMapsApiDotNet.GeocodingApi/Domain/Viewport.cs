@@ -1,5 +1,4 @@
-﻿
-using GoogleMapsApiDotNet.Domain.Domain;
+﻿using GoogleMapsApiDotNet.Domain.Domain;
 
 namespace GoogleMapsApiDotNet.GeocodingApi.Domain
 {

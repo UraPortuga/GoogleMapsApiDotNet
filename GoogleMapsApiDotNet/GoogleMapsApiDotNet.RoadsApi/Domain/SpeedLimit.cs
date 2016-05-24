@@ -1,5 +1,4 @@
-﻿
-namespace GoogleMapsApiDotNet.RoadsApi.Domain
+﻿namespace GoogleMapsApiDotNet.RoadsApi.Domain
 {
 	public class SpeedLimit
 	{

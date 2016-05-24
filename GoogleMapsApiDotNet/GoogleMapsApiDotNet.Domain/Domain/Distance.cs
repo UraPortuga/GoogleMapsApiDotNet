@@ -1,5 +1,4 @@
-﻿
-namespace GoogleMapsApiDotNet.Domain.Domain
+﻿namespace GoogleMapsApiDotNet.Domain.Domain
 {
 	public class Distance
 	{

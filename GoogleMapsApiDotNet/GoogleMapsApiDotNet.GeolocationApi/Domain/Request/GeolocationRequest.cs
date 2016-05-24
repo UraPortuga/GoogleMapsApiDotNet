@@ -3,7 +3,7 @@ using GoogleMapsApiDotNet.Domain.Domain;
 
 namespace GoogleMapsApiDotNet.GeolocationApi.Domain.Request
 {
-	public class GeolocationRequest :BaseRequest
+	public class GeolocationRequest : BaseRequest
 	{
 		public int HomeMobileCountryCode { get; set; }
 		public int HomeMobileNetworkCode { get; set; }

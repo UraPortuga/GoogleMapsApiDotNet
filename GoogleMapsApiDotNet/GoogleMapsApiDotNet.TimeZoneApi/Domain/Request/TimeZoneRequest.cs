@@ -2,7 +2,7 @@
 
 namespace GoogleMapsApiDotNet.TimeZoneApi.Domain.Request
 {
-	public class TimeZoneRequest :BaseRequest
+	public class TimeZoneRequest : BaseRequest
 	{
 		public string Location { get; set; }
 		public string Timestamp { get; set; }

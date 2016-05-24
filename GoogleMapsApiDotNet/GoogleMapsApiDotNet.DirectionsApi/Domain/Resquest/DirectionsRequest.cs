@@ -19,5 +19,5 @@ namespace GoogleMapsApiDotNet.DirectionsApi.Domain.Resquest
 		public string TrafficModel { get; set; }
 		public string TransitMode { get; set; }
 		public string TransitRoutingPreference { get; set; }
-	}	
+	}
 }

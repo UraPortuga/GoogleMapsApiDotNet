@@ -2,7 +2,7 @@
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlacePhotoRequest :BaseRequest
+	public class PlacePhotoRequest : BaseRequest
 	{
 		public string PhotoReference { get; set; }
 		public string MaxHeight { get; set; }
