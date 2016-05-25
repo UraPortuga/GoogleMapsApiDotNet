@@ -15,7 +15,7 @@ namespace GoogleMapsApiDotNet.Domain
 	public static class ManagerApiFluent
 	{
 		private static string Key => AppSettings["Key"];
-
+		
 		#region Elevation Request
 
 		public static Elevation GetElevation() => new Elevation { Key = Key };
