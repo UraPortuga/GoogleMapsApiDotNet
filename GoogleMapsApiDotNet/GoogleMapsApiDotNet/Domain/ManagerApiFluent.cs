@@ -1,21 +1,30 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using GoogleMapsApiDotNet.DirectionsApi.Domain.Response;
 using GoogleMapsApiDotNet.DirectionsApi.Domain.Resquest;
 using GoogleMapsApiDotNet.DistanceMatrixApi.Domain.Request;
+using GoogleMapsApiDotNet.DistanceMatrixApi.Domain.Response;
 using GoogleMapsApiDotNet.ElevationApi.Domain.Request;
+using GoogleMapsApiDotNet.ElevationApi.Domain.Response;
+using GoogleMapsApiDotNet.GeocodingApi.Domain.Response;
 using GoogleMapsApiDotNet.GeocodingApi.Domain.Resquest;
 using GoogleMapsApiDotNet.GeolocationApi.Domain;
 using GoogleMapsApiDotNet.GeolocationApi.Domain.Request;
+using GoogleMapsApiDotNet.GeolocationApi.Domain.Response;
 using GoogleMapsApiDotNet.PlacesApi.Domain.Request;
+using GoogleMapsApiDotNet.PlacesApi.Domain.Response;
 using GoogleMapsApiDotNet.RoadsApi.Domain.Request;
 using GoogleMapsApiDotNet.TimeZoneApi.Domain.Request;
 using static System.Configuration.ConfigurationSettings;
+using GoogleMapsApiDotNet.TimeZoneApi.Domain.Response;
+using GoogleMapsApiDotNet.RoadsApi.Domain.Response;
 
 namespace GoogleMapsApiDotNet.Domain
 {
 	public static class ManagerApiFluent
 	{
 		private static string Key => AppSettings["Key"];
-		
+
 		#region Elevation Request
 
 		public static Elevation GetElevation() => new Elevation { Key = Key };
@@ -37,6 +46,10 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Locations = locations;
 			return request;
 		}
+
+		public static async Task<ElevationResponse> GetAsync(this Elevation request)
+			=> await request.GetAsync<ElevationResponse>(request.ToString());
+
 
 		#endregion
 
@@ -62,6 +75,9 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
+		public static async Task<TimeZoneResponse> GetAsync(this TimeZone request)
+			=> await request.GetAsync<TimeZoneResponse>(request.ToString());
+
 		#endregion
 
 		#region Roads Request
@@ -81,6 +97,11 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Path = path;
 			return request;
 		}
+
+		public static async Task<SnapRoadsResponse> GetAsync(this SnapRoads request)
+			=> await request.GetAsync<SnapRoadsResponse>(request.ToString());
+
+
 
 		#endregion
 
@@ -105,6 +126,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Units = units;
 			return request;
 		}
+
+		public static async Task<SpeedLimitResponse> GetAsync(this SpeedLimit request)
+			=> await request.GetAsync<SpeedLimitResponse>(request.ToString());
 
 		#endregion
 
@@ -198,6 +222,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Waypoints = waypoints;
 			return request;
 		}
+		
+		public static async Task<DirectionsResponse> GetAsync(this Directions request)
+			=> await request.GetAsync<DirectionsResponse>(request.ToString());
 
 		#endregion
 
@@ -277,6 +304,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.TransitRoutingPreference = transitRoutingPreference;
 			return request;
 		}
+		
+		public static async Task<DistanceMatrixResponse> GetAsync(this DistanceMatrix request)
+			=> await request.GetAsync<DistanceMatrixResponse>(request.ToString());
 
 		#endregion
 
@@ -338,6 +368,9 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
+		public static async Task<GeocodingResponse> GetAsync(this Geocoding request)
+			=> await request.GetAsync<GeocodingResponse>(request.ToString());
+
 		#endregion
 
 		#region Geolocation Request
@@ -386,6 +419,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.WifiAccessPoints = wifiAccessPoints;
 			return request;
 		}
+
+		public static async Task<GeolocationResponse> GetAsync(this Geolocation request)
+			=> await request.GetAsync<GeolocationResponse>(request.ToString());
 
 		#endregion
 
@@ -467,6 +503,10 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
+
+		public static async Task<PlaceNearbySearchResponse> GetAsync(this PlaceNearbySearch request)
+			=> await request.GetAsync<PlaceNearbySearchResponse>(request.ToString());
+
 		#endregion
 
 		#region Place Text Search
@@ -532,6 +572,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.ZagatSelected = zagatSelected;
 			return request;
 		}
+
+		public static async Task<PlaceTextSearchResponse> GetAsync(this PlaceTextSearch request)
+			=> await request.GetAsync<PlaceTextSearchResponse>(request.ToString());
 
 		#endregion
 
@@ -599,6 +642,10 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
+
+		public static async Task<PlaceRadarSearchResponse> GetAsync(this PlaceRadarSearch request)
+			=> await request.GetAsync<PlaceRadarSearchResponse>(request.ToString());
+
 		#endregion
 
 		#region Place Autocomplete 
@@ -647,6 +694,10 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
+
+		public static async Task<PlaceAutocompleteResponse> GetAsync(this PlaceAutocomplete request)
+			=> await request.GetAsync<PlaceAutocompleteResponse>(request.ToString());
+
 		#endregion
 
 		#region Place Query Autocomplete
@@ -683,6 +734,9 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
+		public static async Task<PlaceQueryAutocompleteResponse> GetAsync(this PlaceQueryAutocomplete request)
+			=> await request.GetAsync<PlaceQueryAutocompleteResponse>(request.ToString());
+
 		#endregion
 
 		#region Place Details
@@ -712,6 +766,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Reference = reference;
 			return request;
 		}
+
+		public static async Task<PlaceDetailsResponse> GetAsync(this PlaceDetails request)
+			=> await request.GetAsync<PlaceDetailsResponse>(request.ToString());
 
 		#endregion
 
@@ -760,6 +817,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Types = types;
 			return request;
 		}
+		
+		public static async Task<PlaceAddResponse> PostAsync(this PlaceAdd request)
+			=> await request.PostAsync<PlaceAddResponse>(request.ToString());
 
 		#endregion
 
@@ -772,6 +832,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.PlaceId = placeId;
 			return request;
 		}
+
+		public static async Task<PlaceDeleteResponse> PostAsync(this PlaceDelete request)
+			=> await request.PostAsync<PlaceDeleteResponse>(request.ToString());
 
 		#endregion
 
@@ -796,6 +859,9 @@ namespace GoogleMapsApiDotNet.Domain
 			request.MaxWidth = maxWidth;
 			return request;
 		}
+
+		public static async Task<PlacePhotoResponse> GetAsync(this PlacePhoto request)
+			=> await request.GetAsync<PlacePhotoResponse>(request.ToString());
 
 		#endregion
 

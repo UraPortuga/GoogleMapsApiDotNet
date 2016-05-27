@@ -1,20 +1,65 @@
 ﻿using Newtonsoft.Json;
+using static System.Configuration.ConfigurationSettings;
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace GoogleMapsApiDotNet.Domain.Domain
 {
 	public class BaseRequest
 	{
-		[JsonProperty("key")]
-		public string Key { get; set; }
-
-		internal string GetJson()
+		public BaseRequest()
 		{
-			return JsonConvert.SerializeObject(this, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+
+			ServicePointManager.DefaultConnectionLimit = 100;
+			ServicePointManager.Expect100Continue = false;
 		}
 
-		public override string ToString()
+		[JsonIgnore]
+		public static TimeSpan TimeoutRest { get; set; } = Timeout.InfiniteTimeSpan;
+
+		[JsonIgnore]
+		public static string Url { get; set; }
+
+		public static void SetUrl<T>()
 		{
-			return GetJson();
+			Url = AppSettings[nameof(T)];
 		}
+
+		public async Task<T> GetAsync<T>(string resourceUri)
+		{
+			using (var client = new HttpClient())
+			{
+				SetUrl<T>();
+				client.BaseAddress = new Uri(Url);
+				client.DefaultRequestHeaders.Accept.Clear();
+				client.Timeout = TimeoutRest;
+				client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+				var response = await client.GetAsync(resourceUri);
+				if (response.IsSuccessStatusCode)
+					return await response.Content.ReadAsAsync<T>();
+				return default(T);
+			}
+		}
+
+		public async Task<T> PostAsync<T>(object pObject, string resourceUri = null)
+		{
+			using (var client = new HttpClient())
+			{
+				SetUrl<T>();
+				client.BaseAddress = new Uri(Url);
+				client.DefaultRequestHeaders.Accept.Clear();
+				client.Timeout = TimeoutRest;
+				client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+				var response = await client.PostAsJsonAsync(resourceUri, pObject);
+				if (response.IsSuccessStatusCode)
+					return await response.Content.ReadAsAsync<T>();
+				return default(T);
+			}
+		}
+
 	}
 }

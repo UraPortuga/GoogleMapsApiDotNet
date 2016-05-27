@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.TimeZoneApi.Domain.Request
 {
-	public class TimeZone : BaseRequest
+	public class TimeZone : Base
 	{
 		[JsonProperty("location")]
 		public string Location { get; set; }

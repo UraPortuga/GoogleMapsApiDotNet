@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.RoadsApi.Domain.Request
 {
-	public class SnapRoads : BaseRequest
+	public class SnapRoads : Base
 	{
 		[JsonProperty("path")]
 		public List<string> Path { get; set; }

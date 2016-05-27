@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.GeolocationApi.Domain.Request
 {
-	public class Geolocation : BaseRequest
+	public class Geolocation : Base
 	{
 		[JsonProperty("homeMobileCountryCode")]
 		public int HomeMobileCountryCode { get; set; }

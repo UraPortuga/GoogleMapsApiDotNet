@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.DistanceMatrixApi.Domain.Request
 {
-	public class DistanceMatrix : BaseRequest
+	public class DistanceMatrix : Base
 	{
 		[JsonProperty("origins")]
 		public List<string> Origins { get; set; } = new List<string>();

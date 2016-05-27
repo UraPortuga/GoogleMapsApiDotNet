@@ -2,9 +2,10 @@
 using GoogleMapsApiDotNet.Domain.Domain;
 using Newtonsoft.Json;
 
+
 namespace GoogleMapsApiDotNet.ElevationApi.Domain.Request
 {
-	public class Elevation : BaseRequest
+	public class Elevation : Base
 	{
 		[JsonProperty("locations")]
 		public List<string> Locations { get; set; }

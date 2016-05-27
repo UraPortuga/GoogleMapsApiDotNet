@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlaceRadarSearch : BaseRequest
+	public class PlaceRadarSearch : Base
 	{
 		[JsonProperty("location")]
 		public string Location { get; set; }

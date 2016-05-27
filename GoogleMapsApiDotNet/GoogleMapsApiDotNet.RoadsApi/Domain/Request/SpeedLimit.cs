@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.RoadsApi.Domain.Request
 {
-	public class SpeedLimit : BaseRequest
+	public class SpeedLimit : Base
 	{
 		[JsonProperty("path")]
 		public List<string> Path { get; set; }

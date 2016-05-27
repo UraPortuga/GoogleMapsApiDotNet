@@ -2,9 +2,10 @@
 using GoogleMapsApiDotNet.Domain.Domain;
 using Newtonsoft.Json;
 
+
 namespace GoogleMapsApiDotNet.DirectionsApi.Domain.Resquest
 {
-	public class Directions : BaseRequest
+	public class Directions : Base
 	{
 		[JsonProperty("origin")]
 		public string Origin { get; set; }

@@ -2,9 +2,11 @@
 using GoogleMapsApiDotNet.Domain.Domain;
 using Newtonsoft.Json;
 
+
+
 namespace GoogleMapsApiDotNet.GeocodingApi.Domain.Resquest
 {
-	public class Geocoding : BaseRequest
+	public class Geocoding : Base
 	{
 		[JsonProperty("address")]
 		public string Address { get; set; }
