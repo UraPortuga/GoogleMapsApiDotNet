@@ -2,8 +2,6 @@
 using GoogleMapsApiDotNet.Domain.Domain;
 using Newtonsoft.Json;
 
-
-
 namespace GoogleMapsApiDotNet.GeocodingApi.Domain.Resquest
 {
 	public class Geocoding : Base

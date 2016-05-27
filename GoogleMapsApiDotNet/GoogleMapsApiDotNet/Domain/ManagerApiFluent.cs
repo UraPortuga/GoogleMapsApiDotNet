@@ -420,8 +420,8 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
-		public static async Task<GeolocationResponse> GetAsync(this Geolocation request)
-			=> await request.GetAsync<GeolocationResponse>(request.ToString());
+		public static async Task<GeolocationResponse> PostAsync(this Geolocation request)
+			=> await request.PostAsync<GeolocationResponse>(request.GetJson());
 
 		#endregion
 
@@ -819,7 +819,7 @@ namespace GoogleMapsApiDotNet.Domain
 		}
 		
 		public static async Task<PlaceAddResponse> PostAsync(this PlaceAdd request)
-			=> await request.PostAsync<PlaceAddResponse>(request.ToString());
+			=> await request.PostAsync<PlaceAddResponse>(request.GetJson());
 
 		#endregion
 
@@ -834,7 +834,7 @@ namespace GoogleMapsApiDotNet.Domain
 		}
 
 		public static async Task<PlaceDeleteResponse> PostAsync(this PlaceDelete request)
-			=> await request.PostAsync<PlaceDeleteResponse>(request.ToString());
+			=> await request.PostAsync<PlaceDeleteResponse>(request.GetJson());
 
 		#endregion
 
