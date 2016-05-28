@@ -326,27 +326,9 @@ namespace GoogleMapsApiDotNet.Domain
 			return request;
 		}
 
-		public static Geocoding WithLatLng(this Geocoding request, string latLng)
-		{
-			request.LatLng = latLng;
-			return request;
-		}
-
-		public static Geocoding WithPlaceId(this Geocoding request, string placeId)
-		{
-			request.PlaceId = placeId;
-			return request;
-		}
-
 		public static Geocoding WithLanguage(this Geocoding request, string language)
 		{
 			request.Language = language;
-			return request;
-		}
-
-		public static Geocoding WithResultType(this Geocoding request, string resultType)
-		{
-			request.ResultType = resultType;
 			return request;
 		}
 
@@ -361,14 +343,37 @@ namespace GoogleMapsApiDotNet.Domain
 			request.Region = region;
 			return request;
 		}
+		
+		public static async Task<GeocodingResponse> GetAsync(this Geocoding request)
+			=> await request.GetAsync<GeocodingResponse>(request.ToString());
+		
+		public static GeocodingReverse GetGeocodingReverse() => new GeocodingReverse { Key = Key };
 
-		public static Geocoding WithLocationType(this Geocoding request, string locationType)
+		public static GeocodingReverse WithLocationType(this GeocodingReverse request, string locationType)
 		{
 			request.LocationType = locationType;
 			return request;
 		}
 
-		public static async Task<GeocodingResponse> GetAsync(this Geocoding request)
+		public static GeocodingReverse WithLatLng(this GeocodingReverse request, string latLng)
+		{
+			request.LatLng = latLng;
+			return request;
+		}
+
+		public static GeocodingReverse WithPlaceId(this GeocodingReverse request, string placeId)
+		{
+			request.PlaceId = placeId;
+			return request;
+		}
+
+		public static GeocodingReverse WithResultType(this GeocodingReverse request, string resultType)
+		{
+			request.ResultType = resultType;
+			return request;
+		}
+
+		public static async Task<GeocodingResponse> GetAsync(this GeocodingReverse request)
 			=> await request.GetAsync<GeocodingResponse>(request.ToString());
 
 		#endregion

@@ -17,10 +17,7 @@ namespace GoogleMapsApiDotNet.Domain.Domain
 		{
 			return JsonConvert.SerializeObject(this, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 		}
-
-
-
-
+		
 		public bool IsArray(JProperty pro)
 		{
 			return JTokenType.Array == pro.Type;

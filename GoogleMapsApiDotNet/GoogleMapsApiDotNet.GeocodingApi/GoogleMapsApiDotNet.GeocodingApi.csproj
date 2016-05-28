@@ -49,6 +49,7 @@
     <Compile Include="Domain\Geometry.cs" />
     <Compile Include="Domain\Response\GeocodingResponse.cs" />
     <Compile Include="Domain\Resquest\Geocoding.cs" />
+    <Compile Include="Domain\Resquest\GeocodingReverse.cs" />
     <Compile Include="Domain\Result.cs" />
     <Compile Include="Domain\Viewport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
