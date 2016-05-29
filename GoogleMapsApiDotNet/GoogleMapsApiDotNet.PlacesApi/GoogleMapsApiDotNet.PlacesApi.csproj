@@ -46,6 +46,15 @@
   <ItemGroup>
     <Compile Include="Domain\AddressComponent.cs" />
     <Compile Include="Domain\Aspect.cs" />
+    <Compile Include="Domain\Core\PlaceAdd.cs" />
+    <Compile Include="Domain\Core\PlaceAutocomplete.cs" />
+    <Compile Include="Domain\Core\PlaceDelete.cs" />
+    <Compile Include="Domain\Core\PlaceDetails.cs" />
+    <Compile Include="Domain\Core\PlaceNearbySearch.cs" />
+    <Compile Include="Domain\Core\PlacePhoto.cs" />
+    <Compile Include="Domain\Core\PlaceQueryAutocomplete.cs" />
+    <Compile Include="Domain\Core\PlaceRadarSearch.cs" />
+    <Compile Include="Domain\Core\PlaceTextSearch.cs" />
     <Compile Include="Domain\Geometry.cs" />
     <Compile Include="Domain\MatchedSubstring.cs" />
     <Compile Include="Domain\OpeningHours.cs" />

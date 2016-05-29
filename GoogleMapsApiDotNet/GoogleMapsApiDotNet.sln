@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.RoadsAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.TimeZoneApi", "GoogleMapsApiDotNet.TimeZoneApi\GoogleMapsApiDotNet.TimeZoneApi.csproj", "{DEDBF089-C1FE-488C-AE9E-12837C7125EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMapsApiDotNet.Test", "GoogleMapsApiDotNet.Test\GoogleMapsApiDotNet.Test.csproj", "{3650D673-05F6-4B47-81E5-C1F8D5E30106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEDBF089-C1FE-488C-AE9E-12837C7125EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3650D673-05F6-4B47-81E5-C1F8D5E30106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3650D673-05F6-4B47-81E5-C1F8D5E30106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3650D673-05F6-4B47-81E5-C1F8D5E30106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3650D673-05F6-4B47-81E5-C1F8D5E30106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

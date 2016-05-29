@@ -4,11 +4,11 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.GeolocationApi.Domain.Request
 {
-	public class Geolocation : Base
+	public partial class Geolocation : Base
 	{
 		[JsonProperty("homeMobileCountryCode")]
 		public int HomeMobileCountryCode { get; set; }
-		
+
 		[JsonProperty("homeMobileNetworkCode")]
 		public int HomeMobileNetworkCode { get; set; }
 

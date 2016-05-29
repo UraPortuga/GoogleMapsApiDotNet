@@ -4,12 +4,12 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.RoadsApi.Domain.Request
 {
-	public class SnapRoads : Base
+	public partial class SnapRoads : Base
 	{
 		[JsonProperty("path")]
-		public List<string> Path { get; set; }
+		private List<string> Path { get; set; }
 
 		[JsonProperty("interpolate")]
-		public string Interpolate { get; set; }
+		private string Interpolate { get; set; }
 	}
 }

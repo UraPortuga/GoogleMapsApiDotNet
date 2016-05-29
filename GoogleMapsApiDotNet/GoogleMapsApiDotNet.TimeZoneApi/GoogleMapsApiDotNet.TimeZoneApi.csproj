@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Core\TimeZone.cs" />
     <Compile Include="Domain\Request\TimeZone.cs" />
     <Compile Include="Domain\Response\TimeZoneResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

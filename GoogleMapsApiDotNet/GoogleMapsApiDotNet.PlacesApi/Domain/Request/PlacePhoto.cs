@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlacePhoto : Base
+	public partial class PlacePhoto : Base
 	{
 		[JsonProperty("photoreference")]
 		public string PhotoReference { get; set; }

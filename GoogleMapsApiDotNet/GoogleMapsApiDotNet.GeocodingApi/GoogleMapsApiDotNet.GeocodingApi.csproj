@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Domain\AddressComponent.cs" />
     <Compile Include="Domain\Bounds.cs" />
+    <Compile Include="Domain\Core\Geocoding.cs" />
+    <Compile Include="Domain\Core\GeocodingReverse.cs" />
     <Compile Include="Domain\Geometry.cs" />
     <Compile Include="Domain\Response\GeocodingResponse.cs" />
     <Compile Include="Domain\Resquest\Geocoding.cs" />

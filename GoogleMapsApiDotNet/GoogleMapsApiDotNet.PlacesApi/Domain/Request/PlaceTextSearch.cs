@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlaceTextSearch : Base
+	public partial class PlaceTextSearch : Base
 	{
 		[JsonProperty("query")]
 		public string Query { get; set; }
@@ -43,6 +43,5 @@ namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 
 		[JsonProperty("zagatselected")]
 		public string ZagatSelected { get; set; }
-
 	}
 }

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlaceQueryAutocomplete : Base
+	public partial class PlaceQueryAutocomplete : Base
 	{
 		[JsonProperty("input")]
 		public string Input { get; set; }

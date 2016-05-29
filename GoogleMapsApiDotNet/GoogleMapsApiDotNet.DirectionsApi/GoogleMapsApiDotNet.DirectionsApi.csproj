@@ -51,6 +51,7 @@
     <Compile Include="Domain\GeocodedWaypoint.cs" />
     <Compile Include="Domain\Leg.cs" />
     <Compile Include="Domain\Polyline.cs" />
+    <Compile Include="Domain\Core\Directions.cs" />
     <Compile Include="Domain\Resquest\Directions.cs" />
     <Compile Include="Domain\Step.cs" />
     <Compile Include="Domain\Route.cs" />

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Core\DistanceMatrix.cs" />
     <Compile Include="Domain\Element.cs" />
     <Compile Include="Domain\Request\DistanceMatrix.cs" />
     <Compile Include="Domain\Response\DistanceMatrixResponse.cs" />

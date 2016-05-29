@@ -4,21 +4,21 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.GeocodingApi.Domain.Resquest
 {
-	public class Geocoding : Base
+	public partial class Geocoding : Base
 	{
 		[JsonProperty("address")]
-		public string Address { get; set; }
+		private string Address { get; set; }
 
 		[JsonProperty("components")]
-		public string Components { get; set; }
-		
+		private string Components { get; set; }
+
 		[JsonProperty("bounds")]
-		public List<string> Bounds { get; set; }
+		private List<string> Bounds { get; set; }
 
 		[JsonProperty("language")]
-		public string Language { get; set; }
+		private string Language { get; set; }
 
 		[JsonProperty("region")]
-		public string Region { get; set; }
+		private string Region { get; set; }
 	}
 }

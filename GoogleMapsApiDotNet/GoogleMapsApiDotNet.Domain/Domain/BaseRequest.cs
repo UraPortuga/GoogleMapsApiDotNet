@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
-using static System.Configuration.ConfigurationSettings;
-using System;
+﻿using System;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using static System.Configuration.ConfigurationSettings;
 
 namespace GoogleMapsApiDotNet.Domain.Domain
 {
@@ -13,7 +13,6 @@ namespace GoogleMapsApiDotNet.Domain.Domain
 	{
 		public BaseRequest()
 		{
-
 			ServicePointManager.DefaultConnectionLimit = 100;
 			ServicePointManager.Expect100Continue = false;
 		}
@@ -60,6 +59,5 @@ namespace GoogleMapsApiDotNet.Domain.Domain
 				return default(T);
 			}
 		}
-
 	}
 }

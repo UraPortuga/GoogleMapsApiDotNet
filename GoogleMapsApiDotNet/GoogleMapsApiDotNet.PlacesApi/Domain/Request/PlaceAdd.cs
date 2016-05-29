@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 {
-	public class PlaceAdd: Base
+	public partial class PlaceAdd : Base
 	{
 		[JsonProperty("location")]
 		public Location Location { get; set; }
@@ -17,16 +17,16 @@ namespace GoogleMapsApiDotNet.PlacesApi.Domain.Request
 
 		[JsonProperty("phone_number")]
 		public string PhoneNumber { get; set; }
-		
+
 		[JsonProperty("address")]
 		public string Address { get; set; }
-		
+
 		[JsonProperty("types")]
 		public List<string> Types { get; set; }
-		
+
 		[JsonProperty("website")]
 		public string Website { get; set; }
-		
+
 		[JsonProperty("language")]
 		public string Language { get; set; }
 	}
